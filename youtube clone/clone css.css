@@ -1,0 +1,186 @@
+*{
+
+    box-sizing:border-box;
+}
+
+body{
+    overflow: hidden;
+    background:#0f0f0f;
+    color:white;
+    font-family:Arial;
+}
+.navbar{
+    display:flex;
+    align-items:center;
+    padding:10px 20px;
+
+    
+}
+.menu-button{
+   font-size: 28px;
+   border:none;
+   background:none;
+   cursor:pointer;
+    color:white;
+    margin: 10px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    margin-left:15px;
+}
+
+.logo img{
+    width:40px;
+    }
+
+.logo span{
+    margin-left:8px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.search-box{
+    display: flex;
+   margin-left: 150px;
+}
+
+.search-box input{
+    width: 450px;
+    height: 40px;
+    border: 1 px solid gray;
+    border-radius: 20px 0 0 20px;
+    padding-left: 15px;
+    outline: none;
+}
+
+.search-btn{
+    width: 60px;
+    height: 40px;
+    border: 1px solid gray;
+    border-left: none;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
+
+.mic-btn{
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.search-btn i,
+.mic-btn i{
+    font-size: 18px;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.create-btn{
+    display: flex;
+    margin-left: 200px;
+    margin-right: 0px;
+    gap: 8px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.bell{
+    font-size: 25px;
+    cursor: pointer;
+    margin-left: 3px;
+}
+
+.profile{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.profile-icon{
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.sidebar{
+    
+    width:240px;
+    height:100vh;
+    background:#0f0f0f;
+    padding-top:10px;
+}
+
+.sidebar a{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    text-decoration:none;
+    color:white;
+    padding:12px 20px;
+    font-size:16px;
+}
+
+.sidebar a:hover{
+    background:#272727;
+    border-radius:10px;
+}
+
+.sidebar i{
+    font-size:20px;
+}
+
+.sidebar hr{
+    border:1px solid #303030;
+    margin:10px 0;
+}
+
+.sidebar h4{
+    color:white;
+    margin:15px 20px;
+}
+
+.categories{
+    display: flex;
+    flex-direction: row;   /* Zaroori */
+    align-items: center;
+    gap: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+
+    position: fixed;
+    top: 70px;
+    left: 220px;
+    right: 0;
+
+    background: #0f0f0f;
+    padding: 10px;
+}
+.categories button{
+    padding: 8px 14px;
+    border: none;
+    border-radius: 8px;
+    background: #272727;
+    color: white;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+.video-container{
+    
+    margin-left:220px;
+    margin-top:-600px;
+    padding:20px;
+
+    display:grid;
+    grid-template-columns:repeat(3,350px);
+    gap:20px;
+}
